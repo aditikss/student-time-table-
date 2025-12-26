@@ -1,16 +1,88 @@
-# React + Vite
+📅 Timetable & Calendar Management Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React-based timetable management web application that allows users to create, view, and manage schedules in both list view and calendar view. The application also includes a real-time countdown timer for upcoming events to help users stay organized and punctual.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Add, edit, and delete timetable events
 
-## React Compiler
+View schedules in list format
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+View events in a calendar interface
 
-## Expanding the ESLint configuration
+Real-time countdown timer for upcoming events
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Responsive and user-friendly UI
+
+Local storage support (no backend required)
+
+🛠️ Tech Stack
+
+React – Frontend framework
+
+Vite – Fast development & build tool
+
+Tailwind CSS – Styling
+
+date-fns – Date & time calculations
+
+JavaScript (ES6) – Logic
+
+📦 Project Setup
+1️⃣ Clone the repository
+git clone <repository-url>
+cd timetable-calendar-app
+
+2️⃣ Install dependencies
+npm install
+
+3️⃣ Run the development server
+npm run dev
+
+
+The application will run at:
+
+http://localhost:5173
+
+📂 Project Structure
+src/
+│── components/
+│   ├── TimetableList.jsx
+│   ├── CalendarView.jsx
+│   ├── Timer.jsx
+│   ├── AddEvent.jsx
+│   └── Navbar.jsx
+│
+│── contexts/
+│   └── TimetableContext.jsx
+│
+│── utils/
+│   └── dateHelpers.js
+│
+│── App.jsx
+│── main.jsx
+
+⏰ Timer Functionality
+
+The timer is implemented using JavaScript’s setInterval() and React hooks.
+The date-fns library is used to calculate time differences and display countdowns for upcoming events.
+
+🔮 Future Enhancements
+
+User authentication
+
+Cloud database integration
+
+Event notifications
+
+Pomodoro timer for focused study sessions
+
+Export timetable as PDF
+
+🧑‍🏫 Notes
+
+This is a frontend-only project. All timetable data is stored using browser localStorage. Backend integration can be added in the future.
+
+📄 License
+
+This project is for educational purposes.
